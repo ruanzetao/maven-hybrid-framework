@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="JQuery Upload">
+
+<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/"/>
+  <test name="Run on Firefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.jquery.datatable.Level_11_Upload_Files"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

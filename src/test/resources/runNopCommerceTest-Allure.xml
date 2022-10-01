@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce">
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
+		<listeners>
+			<listener class-name="commons.MethodListener" />
+			<listener class-name="reportConfig.ReportNGListener" />
+			<listener class-name="reportConfig.AllureTestListener" />
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+		<classes>
+			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
+			<class name="com.nopcommerce.user.Level_16_ShareData_Cookie" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Facebook Element in Register page">
+
+<parameter name="url" value="https://www.facebook.com"/>
+<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="commons.MethodListener"/>
+</listeners>
+
+
+  <test name="Run on Firefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.facebook.register.Level_13_Element_Undisplayed"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
